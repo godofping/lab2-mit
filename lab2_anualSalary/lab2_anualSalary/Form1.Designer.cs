@@ -42,6 +42,15 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtEmployeeID = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnCalc = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtTotalrOt = new System.Windows.Forms.TextBox();
+            this.txtTotalrR = new System.Windows.Forms.TextBox();
+            this.txtNumHrOT = new System.Windows.Forms.TextBox();
+            this.txtNumHrR = new System.Windows.Forms.TextBox();
+            this.txtOverTime = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.txtTotalSalaryPay = new System.Windows.Forms.TextBox();
             this.txtTotalNumOfHour = new System.Windows.Forms.TextBox();
             this.txtRatePerHour = new System.Windows.Forms.TextBox();
@@ -49,31 +58,24 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtSSS = new System.Windows.Forms.TextBox();
-            this.txtPhilHealth = new System.Windows.Forms.TextBox();
-            this.txtPagIbig = new System.Windows.Forms.TextBox();
-            this.txtGSIS = new System.Windows.Forms.TextBox();
-            this.txtOthers = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtSavings = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtOthers = new System.Windows.Forms.TextBox();
+            this.txtGSIS = new System.Windows.Forms.TextBox();
+            this.txtPagIbig = new System.Windows.Forms.TextBox();
+            this.txtPhilHealth = new System.Windows.Forms.TextBox();
+            this.txtSSS = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.txtTotalNetSalary = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtOverTime = new System.Windows.Forms.TextBox();
-            this.txtNumHrR = new System.Windows.Forms.TextBox();
-            this.txtNumHrOT = new System.Windows.Forms.TextBox();
-            this.txtTotalrOt = new System.Windows.Forms.TextBox();
-            this.txtTotalrR = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.btnCalc2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -198,6 +200,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnCalc);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.txtTotalrOt);
@@ -219,8 +222,83 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = " ";
             // 
+            // btnCalc
+            // 
+            this.btnCalc.Location = new System.Drawing.Point(17, 190);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(125, 39);
+            this.btnCalc.TabIndex = 18;
+            this.btnCalc.Text = "CALCULATE";
+            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.BtnCalc_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(448, 49);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(76, 20);
+            this.label19.TabIndex = 17;
+            this.label19.Text = "Total/rate";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(319, 49);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(101, 20);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "Number of hr";
+            // 
+            // txtTotalrOt
+            // 
+            this.txtTotalrOt.Enabled = false;
+            this.txtTotalrOt.Location = new System.Drawing.Point(438, 104);
+            this.txtTotalrOt.Name = "txtTotalrOt";
+            this.txtTotalrOt.Size = new System.Drawing.Size(96, 26);
+            this.txtTotalrOt.TabIndex = 13;
+            // 
+            // txtTotalrR
+            // 
+            this.txtTotalrR.Enabled = false;
+            this.txtTotalrR.Location = new System.Drawing.Point(438, 72);
+            this.txtTotalrR.Name = "txtTotalrR";
+            this.txtTotalrR.Size = new System.Drawing.Size(96, 26);
+            this.txtTotalrR.TabIndex = 12;
+            // 
+            // txtNumHrOT
+            // 
+            this.txtNumHrOT.Location = new System.Drawing.Point(319, 104);
+            this.txtNumHrOT.Name = "txtNumHrOT";
+            this.txtNumHrOT.Size = new System.Drawing.Size(101, 26);
+            this.txtNumHrOT.TabIndex = 9;
+            // 
+            // txtNumHrR
+            // 
+            this.txtNumHrR.Location = new System.Drawing.Point(319, 72);
+            this.txtNumHrR.Name = "txtNumHrR";
+            this.txtNumHrR.Size = new System.Drawing.Size(101, 26);
+            this.txtNumHrR.TabIndex = 8;
+            // 
+            // txtOverTime
+            // 
+            this.txtOverTime.Location = new System.Drawing.Point(201, 104);
+            this.txtOverTime.Name = "txtOverTime";
+            this.txtOverTime.Size = new System.Drawing.Size(101, 26);
+            this.txtOverTime.TabIndex = 7;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(33, 104);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(147, 20);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Over Time per hour:";
+            // 
             // txtTotalSalaryPay
             // 
+            this.txtTotalSalaryPay.Enabled = false;
             this.txtTotalSalaryPay.Location = new System.Drawing.Point(438, 188);
             this.txtTotalSalaryPay.Name = "txtTotalSalaryPay";
             this.txtTotalSalaryPay.Size = new System.Drawing.Size(96, 26);
@@ -228,9 +306,10 @@
             // 
             // txtTotalNumOfHour
             // 
-            this.txtTotalNumOfHour.Location = new System.Drawing.Point(438, 154);
+            this.txtTotalNumOfHour.Enabled = false;
+            this.txtTotalNumOfHour.Location = new System.Drawing.Point(319, 148);
             this.txtTotalNumOfHour.Name = "txtTotalNumOfHour";
-            this.txtTotalNumOfHour.Size = new System.Drawing.Size(96, 26);
+            this.txtTotalNumOfHour.Size = new System.Drawing.Size(101, 26);
             this.txtTotalNumOfHour.TabIndex = 4;
             // 
             // txtRatePerHour
@@ -252,7 +331,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(260, 160);
+            this.label8.Location = new System.Drawing.Point(142, 154);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(160, 20);
             this.label8.TabIndex = 1;
@@ -288,41 +367,58 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // label10
+            // txtSavings
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(48, 39);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "SSS:";
+            this.txtSavings.Enabled = false;
+            this.txtSavings.Location = new System.Drawing.Point(199, 225);
+            this.txtSavings.Name = "txtSavings";
+            this.txtSavings.Size = new System.Drawing.Size(184, 26);
+            this.txtSavings.TabIndex = 11;
             // 
-            // label11
+            // label15
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(48, 80);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 20);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "PHILHEALTH:";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(48, 231);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(140, 20);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "TOTAL Deduction:";
             // 
-            // label12
+            // txtOthers
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(48, 120);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 20);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "PAG-IBIG:";
+            this.txtOthers.Location = new System.Drawing.Point(199, 185);
+            this.txtOthers.Name = "txtOthers";
+            this.txtOthers.Size = new System.Drawing.Size(184, 26);
+            this.txtOthers.TabIndex = 9;
             // 
-            // label13
+            // txtGSIS
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(48, 156);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(53, 20);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "GSIS:";
+            this.txtGSIS.Location = new System.Drawing.Point(199, 149);
+            this.txtGSIS.Name = "txtGSIS";
+            this.txtGSIS.Size = new System.Drawing.Size(184, 26);
+            this.txtGSIS.TabIndex = 8;
+            // 
+            // txtPagIbig
+            // 
+            this.txtPagIbig.Location = new System.Drawing.Point(199, 114);
+            this.txtPagIbig.Name = "txtPagIbig";
+            this.txtPagIbig.Size = new System.Drawing.Size(184, 26);
+            this.txtPagIbig.TabIndex = 7;
+            // 
+            // txtPhilHealth
+            // 
+            this.txtPhilHealth.Location = new System.Drawing.Point(199, 74);
+            this.txtPhilHealth.Name = "txtPhilHealth";
+            this.txtPhilHealth.Size = new System.Drawing.Size(184, 26);
+            this.txtPhilHealth.TabIndex = 6;
+            // 
+            // txtSSS
+            // 
+            this.txtSSS.Enabled = false;
+            this.txtSSS.Location = new System.Drawing.Point(199, 36);
+            this.txtSSS.Name = "txtSSS";
+            this.txtSSS.Size = new System.Drawing.Size(184, 26);
+            this.txtSSS.TabIndex = 5;
             // 
             // label14
             // 
@@ -333,56 +429,41 @@
             this.label14.TabIndex = 4;
             this.label14.Text = "OTHERS:";
             // 
-            // txtSSS
+            // label13
             // 
-            this.txtSSS.Location = new System.Drawing.Point(199, 36);
-            this.txtSSS.Name = "txtSSS";
-            this.txtSSS.Size = new System.Drawing.Size(184, 26);
-            this.txtSSS.TabIndex = 5;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(48, 156);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(53, 20);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "GSIS:";
             // 
-            // txtPhilHealth
+            // label12
             // 
-            this.txtPhilHealth.Location = new System.Drawing.Point(199, 74);
-            this.txtPhilHealth.Name = "txtPhilHealth";
-            this.txtPhilHealth.Size = new System.Drawing.Size(184, 26);
-            this.txtPhilHealth.TabIndex = 6;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(48, 120);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(86, 20);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "PAG-IBIG:";
             // 
-            // txtPagIbig
+            // label11
             // 
-            this.txtPagIbig.Location = new System.Drawing.Point(199, 114);
-            this.txtPagIbig.Name = "txtPagIbig";
-            this.txtPagIbig.Size = new System.Drawing.Size(184, 26);
-            this.txtPagIbig.TabIndex = 7;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(48, 80);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(113, 20);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "PHILHEALTH:";
             // 
-            // txtGSIS
+            // label10
             // 
-            this.txtGSIS.Location = new System.Drawing.Point(199, 149);
-            this.txtGSIS.Name = "txtGSIS";
-            this.txtGSIS.Size = new System.Drawing.Size(184, 26);
-            this.txtGSIS.TabIndex = 8;
-            // 
-            // txtOthers
-            // 
-            this.txtOthers.Location = new System.Drawing.Point(199, 185);
-            this.txtOthers.Name = "txtOthers";
-            this.txtOthers.Size = new System.Drawing.Size(184, 26);
-            this.txtOthers.TabIndex = 9;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(48, 231);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 20);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "SAVINGS:";
-            // 
-            // txtSavings
-            // 
-            this.txtSavings.Location = new System.Drawing.Point(199, 225);
-            this.txtSavings.Name = "txtSavings";
-            this.txtSavings.Size = new System.Drawing.Size(184, 26);
-            this.txtSavings.TabIndex = 11;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(48, 39);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 20);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "SSS:";
             // 
             // btnSave
             // 
@@ -428,74 +509,22 @@
             this.txtTotalNetSalary.Size = new System.Drawing.Size(184, 26);
             this.txtTotalNetSalary.TabIndex = 13;
             // 
-            // label17
+            // btnCalc2
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(33, 104);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(147, 20);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Over Time per hour:";
-            // 
-            // txtOverTime
-            // 
-            this.txtOverTime.Location = new System.Drawing.Point(201, 104);
-            this.txtOverTime.Name = "txtOverTime";
-            this.txtOverTime.Size = new System.Drawing.Size(101, 26);
-            this.txtOverTime.TabIndex = 7;
-            // 
-            // txtNumHrR
-            // 
-            this.txtNumHrR.Location = new System.Drawing.Point(319, 72);
-            this.txtNumHrR.Name = "txtNumHrR";
-            this.txtNumHrR.Size = new System.Drawing.Size(101, 26);
-            this.txtNumHrR.TabIndex = 8;
-            this.txtNumHrR.TextChanged += new System.EventHandler(this.TxtNumHrR_TextChanged);
-            // 
-            // txtNumHrOT
-            // 
-            this.txtNumHrOT.Location = new System.Drawing.Point(319, 104);
-            this.txtNumHrOT.Name = "txtNumHrOT";
-            this.txtNumHrOT.Size = new System.Drawing.Size(101, 26);
-            this.txtNumHrOT.TabIndex = 9;
-            // 
-            // txtTotalrOt
-            // 
-            this.txtTotalrOt.Location = new System.Drawing.Point(438, 104);
-            this.txtTotalrOt.Name = "txtTotalrOt";
-            this.txtTotalrOt.Size = new System.Drawing.Size(96, 26);
-            this.txtTotalrOt.TabIndex = 13;
-            // 
-            // txtTotalrR
-            // 
-            this.txtTotalrR.Location = new System.Drawing.Point(438, 72);
-            this.txtTotalrR.Name = "txtTotalrR";
-            this.txtTotalrR.Size = new System.Drawing.Size(96, 26);
-            this.txtTotalrR.TabIndex = 12;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(319, 49);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(101, 20);
-            this.label18.TabIndex = 16;
-            this.label18.Text = "Number of hr";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(448, 49);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(76, 20);
-            this.label19.TabIndex = 17;
-            this.label19.Text = "Total/rate";
+            this.btnCalc2.Location = new System.Drawing.Point(606, 387);
+            this.btnCalc2.Name = "btnCalc2";
+            this.btnCalc2.Size = new System.Drawing.Size(148, 38);
+            this.btnCalc2.TabIndex = 14;
+            this.btnCalc2.Text = "CALCULATE";
+            this.btnCalc2.UseVisualStyleBackColor = true;
+            this.btnCalc2.Click += new System.EventHandler(this.BtnCalc2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 580);
+            this.Controls.Add(this.btnCalc2);
             this.Controls.Add(this.txtTotalNetSalary);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.btnCancel);
@@ -565,6 +594,8 @@
         private System.Windows.Forms.TextBox txtTotalrR;
         private System.Windows.Forms.TextBox txtNumHrOT;
         private System.Windows.Forms.TextBox txtNumHrR;
+        private System.Windows.Forms.Button btnCalc;
+        private System.Windows.Forms.Button btnCalc2;
     }
 }
 
