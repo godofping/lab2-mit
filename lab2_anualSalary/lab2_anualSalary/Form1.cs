@@ -12,7 +12,7 @@ namespace lab2_anualSalary
 {
     public partial class Form1 : Form
     {
-        int tae;
+      
         public Form1()
         {
             InitializeComponent();
