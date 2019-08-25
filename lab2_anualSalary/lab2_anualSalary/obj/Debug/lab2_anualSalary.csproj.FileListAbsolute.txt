@@ -8,3 +8,4 @@ C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2
 C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.csproj.CoreCompileInputs.cache
 C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.exe
 C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.pdb
+C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.Form2.resources

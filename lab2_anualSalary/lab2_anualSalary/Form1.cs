@@ -130,9 +130,9 @@ namespace lab2_anualSalary
             dblPhilHealth = Convert.ToDouble(txtPhilHealth.Text);
             dblPagIbig = Convert.ToDouble(txtPagIbig.Text);
             dblGsid = Convert.ToDouble(txtGSIS.Text);
-           // dblOthers = Convert.ToDouble(txtOthers.Text);
-            dblTotalDed = Convert.ToDouble(txtSavings.Text);
-            dblTotalsalaryPay2 = Convert.ToDouble(txtTotalSalaryPay);
+            dblOthers = Convert.ToDouble(txtOthers.Text);
+            //dblTotalDed = Convert.ToDouble(txtSavings.Text);
+            dblTotalsalaryPay2 = Convert.ToDouble(txtTotalSalaryPay.Text);
 
             double dblTempTotalDed = dblSSS + dblPhilHealth + dblPagIbig + dblGsid + dblOthers;
 
@@ -140,10 +140,27 @@ namespace lab2_anualSalary
 
             dblTotalNetSalary = dblTotalsalaryPay2 - dblTempTotalDed;
 
-            txtTotalNetSalary.Text = dblTotalNetSalary.ToString();
+           
+double Monthly = dblTotalsalaryPay2 * 2;
+            txtTotalNetSalary.Text = dblTotalsalaryPay2.ToString();
+          
             
+             txtMS.Text = dblTotalsalaryPay2.ToString();
+
+
+             txtYS.Text = dblTotalsalaryPay2.ToString();
+
+            txtTotalNetSalary.Text = dblTotalsalaryPay2.ToString();
+
+           
+            double Yearly = dblTotalsalaryPay2 * 12;
             
 
+
+
+
         }
+
+      
     }
 }

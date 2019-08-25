@@ -76,6 +76,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtTotalNetSalary = new System.Windows.Forms.TextBox();
             this.btnCalc2 = new System.Windows.Forms.Button();
+            this.txtMS = new System.Windows.Forms.TextBox();
+            this.txtYS = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -386,6 +390,7 @@
             // 
             // txtOthers
             // 
+            this.txtOthers.Enabled = false;
             this.txtOthers.Location = new System.Drawing.Point(199, 185);
             this.txtOthers.Name = "txtOthers";
             this.txtOthers.Size = new System.Drawing.Size(184, 26);
@@ -393,6 +398,7 @@
             // 
             // txtGSIS
             // 
+            this.txtGSIS.Enabled = false;
             this.txtGSIS.Location = new System.Drawing.Point(199, 149);
             this.txtGSIS.Name = "txtGSIS";
             this.txtGSIS.Size = new System.Drawing.Size(184, 26);
@@ -400,6 +406,7 @@
             // 
             // txtPagIbig
             // 
+            this.txtPagIbig.Enabled = false;
             this.txtPagIbig.Location = new System.Drawing.Point(199, 114);
             this.txtPagIbig.Name = "txtPagIbig";
             this.txtPagIbig.Size = new System.Drawing.Size(184, 26);
@@ -407,6 +414,7 @@
             // 
             // txtPhilHealth
             // 
+            this.txtPhilHealth.Enabled = false;
             this.txtPhilHealth.Location = new System.Drawing.Point(199, 74);
             this.txtPhilHealth.Name = "txtPhilHealth";
             this.txtPhilHealth.Size = new System.Drawing.Size(184, 26);
@@ -467,9 +475,9 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(593, 483);
+            this.btnSave.Location = new System.Drawing.Point(1068, 453);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(140, 47);
+            this.btnSave.Size = new System.Drawing.Size(94, 34);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -477,18 +485,18 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(740, 483);
+            this.btnEdit.Location = new System.Drawing.Point(1068, 494);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(152, 47);
+            this.btnEdit.Size = new System.Drawing.Size(94, 34);
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(898, 483);
+            this.btnCancel.Location = new System.Drawing.Point(1068, 534);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(152, 47);
+            this.btnCancel.Size = new System.Drawing.Size(94, 34);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -519,11 +527,47 @@
             this.btnCalc2.UseVisualStyleBackColor = true;
             this.btnCalc2.Click += new System.EventHandler(this.BtnCalc2_Click);
             // 
+            // txtMS
+            // 
+            this.txtMS.Location = new System.Drawing.Point(606, 483);
+            this.txtMS.Name = "txtMS";
+            this.txtMS.Size = new System.Drawing.Size(148, 26);
+            this.txtMS.TabIndex = 15;
+            // 
+            // txtYS
+            // 
+            this.txtYS.Location = new System.Drawing.Point(792, 483);
+            this.txtYS.Name = "txtYS";
+            this.txtYS.Size = new System.Drawing.Size(148, 26);
+            this.txtYS.TabIndex = 16;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(602, 449);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(112, 20);
+            this.label20.TabIndex = 17;
+            this.label20.Text = "Monthly Salary";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(788, 449);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(101, 20);
+            this.label21.TabIndex = 18;
+            this.label21.Text = "Yearly Salary";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 580);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.txtYS);
+            this.Controls.Add(this.txtMS);
             this.Controls.Add(this.btnCalc2);
             this.Controls.Add(this.txtTotalNetSalary);
             this.Controls.Add(this.label16);
@@ -596,6 +640,10 @@
         private System.Windows.Forms.TextBox txtNumHrR;
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Button btnCalc2;
+        private System.Windows.Forms.TextBox txtMS;
+        private System.Windows.Forms.TextBox txtYS;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
     }
 }
 
