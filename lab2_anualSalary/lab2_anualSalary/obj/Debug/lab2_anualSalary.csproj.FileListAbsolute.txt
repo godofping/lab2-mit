@@ -9,3 +9,14 @@ C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2
 C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.exe
 C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.pdb
 C:\Users\63921\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.Form2.resources
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\bin\Debug\lab2_anualSalary.exe.config
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\bin\Debug\lab2_anualSalary.exe
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\bin\Debug\lab2_anualSalary.pdb
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.csprojAssemblyReference.cache
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.Form1.resources
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.Form2.resources
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.Properties.Resources.resources
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.csproj.GenerateResource.cache
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.csproj.CoreCompileInputs.cache
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.exe
+C:\Users\lev\Desktop\lab2-mit\lab2_anualSalary\lab2_anualSalary\obj\Debug\lab2_anualSalary.pdb

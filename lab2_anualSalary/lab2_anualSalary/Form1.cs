@@ -58,7 +58,7 @@ namespace lab2_anualSalary
             dblPhilHealth = Convert.ToDouble(txtPhilHealth.Text);
             dblGsid = Convert.ToDouble(txtGSIS.Text);
             dblOthers = Convert.ToDouble(txtOthers.Text);
-            
+
 
             //dblTotalNetSalary;
 
@@ -66,18 +66,18 @@ namespace lab2_anualSalary
 
         }
 
-        
-
-      
 
 
 
 
-       
-      
+
+
+
+
+
         private void BtnCalc_Click(object sender, EventArgs e)
         {
-         
+
             dblRatePerHour = Convert.ToDouble(txtRatePerHour.Text);
             dblNumberofHourForRatePerHour = Convert.ToDouble(txtNumHrR.Text);
             double dblTotalrR = dblRatePerHour * dblNumberofHourForRatePerHour;
@@ -94,7 +94,7 @@ namespace lab2_anualSalary
             dblOverTime = Convert.ToDouble(txtNumHrOT.Text);
 
             double dblTotalRS = dblRatePerHour + dblOverTime;
-        
+
             txtTotalNumOfHour.Text = dblTotalRS.ToString();
 
             dblTotalrR = Convert.ToDouble(txtTotalrR.Text);
@@ -140,27 +140,30 @@ namespace lab2_anualSalary
 
             dblTotalNetSalary = dblTotalsalaryPay2 - dblTempTotalDed;
 
-           
-double Monthly = dblTotalsalaryPay2 * 2;
+
+            double Monthly = dblTotalsalaryPay2 * 2;
+            txtTotalNetSalary.Text = Monthly.ToString();
+
+
+            txtMS.Text = dblTotalsalaryPay2.ToString();
+
+
+            txtYS.Text = dblTotalsalaryPay2.ToString();
+
             txtTotalNetSalary.Text = dblTotalsalaryPay2.ToString();
-          
-            
-             txtMS.Text = dblTotalsalaryPay2.ToString();
 
 
-             txtYS.Text = dblTotalsalaryPay2.ToString();
-
-            txtTotalNetSalary.Text = dblTotalsalaryPay2.ToString();
-
-           
             double Yearly = dblTotalsalaryPay2 * 12;
-            
+
 
 
 
 
         }
 
-      
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
