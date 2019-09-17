@@ -40,6 +40,17 @@ namespace lab2_anualSalary
             InitializeComponent();
         }
 
+/*        IEmployeeIDNum = Convert.ToInt32(TBEmployeeID.Text);
+            StrLN = TBLName.Text;
+            StrFN = TBFName.Text;
+            StrMN = TBMName.Text;
+            StrAdd = TBAddress.Text;
+            ITelMobb = Convert.ToInt32(TBTMNumber.Text);
+            StrPosition = TBPosition.Text;*/
+
+
+
+
         private void BtnSave_Click(object sender, EventArgs e)
         {
             iID = Convert.ToInt32(txtEmployeeID.Text);
@@ -64,15 +75,8 @@ namespace lab2_anualSalary
 
 
 
+
         }
-
-
-
-
-
-
-
-
 
 
         private void BtnCalc_Click(object sender, EventArgs e)
